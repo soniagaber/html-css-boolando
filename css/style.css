@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px dotted red;
+}
+
+header{
+    background-color: #FF6900;
+    height: 30px;
+}
+
+.container-centered{
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+#header-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-inner>div{
+    background-color: red;
+    min-width: 50px;
+}
+
+#tipo ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 5px;
+}
