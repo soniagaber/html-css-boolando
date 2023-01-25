@@ -1,15 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px dotted red;
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
-header{
+header {
     background-color: #FF6900;
     height: 30px;
     position: fixed;
@@ -17,107 +16,171 @@ header{
     left: 0;
     width: 100%;
     color: white;
+    z-index: 2;
 }
 
-.container-centered{
+.container-centered {
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
 }
 
-#header-inner{
+#header-inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#header-inner>div{
-    background-color: red;
+#header-inner>div {
     min-width: 50px;
 }
 
-#logo img{height: 100%;
-
+header li {
+    font-size: 0.7em;
 }
 
-#tipo ul{
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logo img {
+    height: 70%;
+}
+
+#tipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tipo ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 5px;
 }
 
-#main-inner{
-padding-top: 60px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-padding-bottom: 30px;
-background-color: aqua;
-gap: 25px;
+#profilo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+    align-items: center;
 }
 
-#main-inner>div{
-    background-color: blue;
+#main-inner {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    gap: 25px;
+}
+
+#main-inner>div {
     display: flex;
     flex-direction: row;
     min-height: 300px;
     justify-content: space-between;
 }
 
-.riquadro-articolo{
+.riquadro-articolo {
     width: 30%;
 }
 
-.modello{
+.modello {
     text-transform: uppercase;
 }
 
-.riquadro-articolo .card{
+.riquadro-articolo .card {
     width: 100%;
     position: relative;
 }
 
-.card img{
+.card img {
     width: 100%;
 }
 
-.card img:nth-of-type(2){
+.card img:nth-of-type(2) {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.card:hover .seconda-img{
+.card:hover .seconda-img {
     display: inline-block;
 }
 
-
-footer{
-    background-color: #1A1A1A;
-    height: 40px;
+.marca {
+    font-size: 0.7em;
 }
 
-#footer-inner{
+.modello {
+    font-size: 0.75em;
+}
+
+.prezzo {
+    font-size: 0.7em;
+}
+
+.riquadro-articolo span {
+    color: red;
+}
+
+footer {
+    background-color: #1A1A1A;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#footer-inner>div{
+#footer-inner>div {
     height: 100%;
     min-width: 70px;
-    background-color: black;
     color: white;
 }
 
-footer ul{
+footer ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 8px;
+    font-size: 0.6em;
 }
 
+#azienda {
+    font-size: 0.8em;
+}
 
+#trovaci-anche {
+    font-size: 0.6em;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#icone-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
